@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f2eee3">
+  <meta name="description" content="12 个狗狗生活现场，测出你的 BARK8 专属犬格。">
+  <title>犬格测试 · BARK 8</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%231d2623'/%3E%3Cpath d='M13 28C9 17 15 9 24 15l6 5c1-.2 2-.3 3-.3s2 .1 3 .3l6-5c9-6 15 2 11 13 2 3 3 7 3 11 0 12-10 19-23 19S10 51 10 39c0-4 1-8 3-11Z' fill='%23ffca4b'/%3E%3Ccircle cx='24' cy='34' r='3' fill='%231d2623'/%3E%3Ccircle cx='40' cy='34' r='3' fill='%231d2623'/%3E%3Cellipse cx='32' cy='44' rx='6' ry='4' fill='%231d2623'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="paper-noise" aria-hidden="true"></div>
+  <div class="trail-grid" aria-hidden="true"></div>
+
+  <div class="site">
+    <header class="site-header">
+      <a class="brand" href="#" id="brand-home" aria-label="返回首页">
+        <span class="brand__dog" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <path d="M10 20C6 8 14 4 22 12l3 2c.8-.2 1.7-.2 2.5 0l3-2c8-8 16-4 12 8 2 3 3 7 3 11 0 9-7 14-18 14S10 40 10 31c0-4 1-8 3-11Z"/>
+            <circle cx="18" cy="26" r="2.2"/><circle cx="31" cy="26" r="2.2"/>
+            <ellipse cx="24.5" cy="34" rx="5" ry="3.5"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>犬格测试</strong>
+          <small>BARK 8 · 狗狗行为观察所</small>
+        </span>
+      </a>
+      <p class="header-note">不测服从度，只测它准备怎样当一只狗</p>
+    </header>
+
+    <main>
+      <section class="screen welcome" id="welcome-screen">
+        <div class="welcome-copy">
+          <p class="kicker"><span></span>人类与犬类共同生活调查 · 第 8 号</p>
+          <h1>
+            人有人格，<br>
+            猫有猫格，<br>
+            狗当然有<br>
+            <em>犬格。</em>
+          </h1>
+          <p class="welcome-lede">
+            它不是“听话”或者“不听话”两个选项能概括的。
+            它可能是见谁都像失散多年亲人的金毛，也可能是把沙发拆成当代艺术的哈士奇。
+            用 12 个狗生现场，测出它专属的四字母犬格。
+          </p>
+          <div class="welcome-actions">
+            <button class="start-button" id="start-button" type="button">
+              <span class="start-button__ball" aria-hidden="true"></span>
+              牵绳，开始测犬格
+              <b aria-hidden="true">↗</b>
+            </button>
+            <p>12 个狗生现场 · 8 种犬格<br>由家里负责捡屎的那位人类代答</p>
+          </div>
+          <div class="letter-strip" aria-label="犬格字母">
+            <span><b>B</b> 活力外放 / <b>C</b> 稳重克制</span>
+            <span><b>A</b> 黏人依赖 / <b>I</b> 独立自处</span>
+            <span><b>R</b> 探索冒险 / <b>H</b> 恋家守门</span>
+            <span><b>K</b> 食物驱动 / <b>T</b> 玩具驱动</span>
+          </div>
+        </div>
+
+        <div class="welcome-visual" aria-hidden="true">
+          <div class="sun-splat"></div>
+          <div class="leash leash--left"></div>
+          <div class="leash leash--right"></div>
+          <div class="hero-dog">
+            <svg viewBox="0 0 420 390">
+              <path class="hero-line hero-tongue" d="M244 169c11 20 12 37 3 51-12-11-16-25-13-42Z"/>
+              <path class="hero-fill" d="M102 163C69 130 61 62 96 55c31-6 57 32 69 74m153 34c33-33 41-101 6-108-31-6-57 32-69 74"/>
+              <path class="hero-fill" d="M96 166c0-56 39-92 114-92s114 36 114 92v72c0 63-45 101-114 101S96 301 96 238Z"/>
+              <path class="hero-fill" d="M142 284c-35 18-52 51-54 91h244c-2-40-19-73-54-91-20 20-44 29-68 29s-48-9-68-29Z"/>
+              <path class="hero-ink" d="M147 173c15-13 31-12 46 2-12 7-34 7-46-2Zm80 0c15-14 31-13 46-2-12 9-34 9-46 2Z"/>
+              <ellipse class="hero-ink" cx="210" cy="213" rx="25" ry="18"/>
+              <path class="hero-line" d="M210 231v12m0 0c-13 12-28 11-39 4m39-4c13 12 28 11 39 4"/>
+              <path class="hero-line" d="M119 213 65 199m57 38-60 21m269-45 54-14m-57 38 60 21"/>
+              <path class="hero-line" d="M178 327v59m-46 0h92"/>
+              <path class="hero-fill hero-collar" d="M140 283c43 16 97 16 140 0l8 22c-51 18-105 18-156 0Z"/>
+              <path class="hero-line" d="M374 245c50-20 34-64 7-72"/>
+            </svg>
+            <span class="hero-dog__tag">观察对象<br>疑似过于热情</span>
+          </div>
+          <div class="ball">
+            <span></span>
+            <b>WALK?</b>
+          </div>
+          <div class="route-note">
+            <span>今日散步路线</span>
+            <strong>门口 → 每一根电线杆 → 回家</strong>
+            <small>预计用时：人类忍耐上限</small>
+          </div>
+          <div class="dog-tag dog-tag--one">金毛<br>迎宾官</div>
+          <div class="dog-tag dog-tag--two">哈士奇<br>拆家侠</div>
+          <div class="dog-tag dog-tag--three">柴犬<br>倔强包</div>
+          <div class="paw-print paw-print--one">●</div>
+          <div class="paw-print paw-print--two">●</div>
+          <span class="hand-note">“它平时挺乖的。”<br><i>——每个狗主人的统一口供</i></span>
+        </div>
+
+        <div class="welcome-footer" aria-hidden="true">
+          <span>不是品种训练指南</span>
+          <i></i>
+          <span>是一份狗勾生活口供</span>
+        </div>
+      </section>
+
+      <section class="screen quiz" id="quiz-screen" hidden>
+        <div class="quiz-layout">
+          <aside class="quiz-sidebar">
+            <div class="quiz-sidebar__top">
+              <span>散步观察站</span>
+              <strong id="question-index">01 / 12</strong>
+            </div>
+            <div class="trail-meter" aria-hidden="true">
+              <span id="trail-meter-fill"></span>
+              <i id="trail-meter-pin">🐾</i>
+            </div>
+            <div class="mini-leash" aria-hidden="true">
+              <svg viewBox="0 0 120 130">
+                <path d="M29 49C17 25 31 12 48 25l6 7c3-.6 6-.9 9-.9s6 .3 9 .9l6-7c16-13 30 0 18 24 4 8 6 16 6 24 0 23-18 37-40 37S23 96 23 73c0-8 2-16 6-24Z"/>
+                <circle cx="45" cy="66" r="5"/><circle cx="68" cy="66" r="5"/>
+                <ellipse cx="56.5" cy="82" rx="11" ry="8"/>
+              </svg>
+            </div>
+            <blockquote>
+              “不要选你想让它成为的狗，<br>
+              请选它昨天实际干出来的事。”
+            </blockquote>
+            <div class="quiz-sidebar__note">
+              <span>观察须知</span>
+              <p>如果证据互相矛盾，请选择被咬坏的拖鞋所支持的那一方。</p>
+            </div>
+          </aside>
+
+          <div class="quiz-main">
+            <div class="mobile-progress"><span id="mobile-progress-fill"></span></div>
+            <article class="question-card" id="question-card" aria-live="polite">
+              <span class="paper-clip paper-clip--left" aria-hidden="true"></span>
+              <span class="paper-clip paper-clip--right" aria-hidden="true"></span>
+              <div class="question-card__meta">
+                <span id="question-category">人类回家现场</span>
+                <span>请勿美化狗勾</span>
+              </div>
+              <h2 id="question-title"></h2>
+              <p class="question-hint" id="question-hint"></p>
+              <div class="answer-grid" id="answer-grid" role="radiogroup" aria-labelledby="question-title"></div>
+              <p class="field-note">观察员备注：如果狗试图吃掉问卷，请先抢回来，再继续作答。</p>
+            </article>
+            <div class="quiz-controls">
+              <button class="back-button" id="back-button" type="button">
+                <span aria-hidden="true">←</span> 回看上一站
+              </button>
+              <button class="next-button" id="next-button" type="button" disabled>
+                <span>捡起一条狗勾证据</span>
+                <b aria-hidden="true">→</b>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen calculating" id="calculating-screen" hidden>
+        <div class="calculating-inner">
+          <div class="nose-scanner" aria-hidden="true">
+            <span class="nose-ring nose-ring--one"></span>
+            <span class="nose-ring nose-ring--two"></span>
+            <div class="nose-shape"></div>
+            <span class="nose-bubble nose-bubble--one">嗅</span>
+            <span class="nose-bubble nose-bubble--two">闻</span>
+            <span class="nose-bubble nose-bubble--three">汪</span>
+          </div>
+          <p>正在闻取你的十二份证词</p>
+          <h2 id="calculating-title">读取活力、黏人度<br>与拆家记录</h2>
+          <span id="calculating-status">先检测看到球时的起跳高度</span>
+        </div>
+      </section>
+
+      <section class="screen result" id="result-screen" hidden>
+        <div class="result-inner">
+          <div class="result-topline">
+            <span>BARK 8 专属犬格报告</span>
+            <button class="round-button" id="restart-top" type="button" aria-label="重新测试" title="重新测试">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/>
+              </svg>
+            </button>
+          </div>
+
+          <article class="result-hero" id="result-hero">
+            <div class="result-copy">
+              <p class="result-copy__eyebrow">你家狗勾的犬格是</p>
+              <div class="result-name-row">
+                <div>
+                  <span id="result-breed"></span>
+                  <h1 id="result-name">阳光迎宾官</h1>
+                </div>
+                <span class="dog-code" id="result-code">BARK</span>
+              </div>
+              <p class="result-subtitle" id="result-subtitle"></p>
+              <p class="result-summary" id="result-summary"></p>
+              <div class="result-tags" id="result-tags"></div>
+            </div>
+            <div class="result-art-wrap">
+              <div class="result-art" id="result-art"></div>
+              <span class="art-sticker" id="art-sticker">尾巴已启动<br>螺旋桨模式</span>
+            </div>
+          </article>
+
+          <section class="letter-code-section">
+            <div class="section-title">
+              <span>01</span>
+              <h2>四字母犬格解码</h2>
+            </div>
+            <div class="letter-grid" id="letter-grid"></div>
+          </section>
+
+          <div class="result-columns">
+            <section class="result-panel moments-panel">
+              <div class="section-title">
+                <span>02</span>
+                <h2>狗生名场面</h2>
+              </div>
+              <div class="moments-list" id="moments-list"></div>
+            </section>
+
+            <section class="result-panel care-panel">
+              <div class="section-title">
+                <span>03</span>
+                <h2>养狗说明书</h2>
+              </div>
+              <div class="care-list" id="care-list"></div>
+            </section>
+          </div>
+
+          <section class="human-panel">
+            <div>
+              <span>最适合你的人类</span>
+              <strong id="human-match"></strong>
+            </div>
+            <div>
+              <span>最容易翻车的时刻</span>
+              <strong id="human-warning"></strong>
+            </div>
+          </section>
+
+          <section class="dog-quote">
+            <span>今日汪语</span>
+            <blockquote id="dog-quote"></blockquote>
+            <i>汪</i>
+          </section>
+
+          <section class="alternates-section">
+            <div class="section-title">
+              <span>04</span>
+              <h2>容易混进来的相邻犬格</h2>
+            </div>
+            <div class="alternate-grid" id="alternate-grid"></div>
+          </section>
+
+          <div class="result-actions">
+            <button class="save-button" id="save-button" type="button">
+              保存犬格档案 <span aria-hidden="true">↓</span>
+            </button>
+            <button class="copy-button" id="copy-button" type="button">
+              复制犬格结果
+            </button>
+            <button class="restart-button" id="restart-button" type="button">
+              换只狗再测
+            </button>
+          </div>
+
+          <p class="disclaimer">
+            本测试以常见品种印象和互联网狗梗做趣味拟人，不是品种鉴定，也不代表犬种与性格存在绝对对应。
+            每只狗的经历、训练与健康状态都不同，请以真实观察和专业训犬建议为准。
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
